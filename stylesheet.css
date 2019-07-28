@@ -18,9 +18,11 @@
     src:url('font/Quick.otf');
 }
 
-#mainbody {
+.mainbody {
     margin-left: 80px;
     margin-right: 80px;
+    padding-top: 30px;
+    padding-bottom:40px;
 }
 
 .logo {
@@ -92,6 +94,14 @@ p {
     text-align: center;
 }
 
+.title-projectoverview {
+   
+    font-family: quick;
+    font-size: 35pt;
+    color: #a63b0c;
+    text-align: center;
+}
+
 .description3 {
     font-family: roboto;
     font-size: 20pt ;
@@ -110,7 +120,11 @@ p {
 }
 
 
-
+.project-overview {
+   
+    background-color: #f7f2f1;
+    width:100% !important;
+}
 
 
 
