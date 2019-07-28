@@ -121,10 +121,29 @@ p {
 
 
 .project-overview {
-   
     background-color: #FBF8F8;
     width:100% !important;
 }
+
+ol {
+    font-family: light;
+    font-size:15pt;
+    text-align:justify;
+}
+
+.list {
+    color: #cc5200;
+}
+
+a {
+    color: #a63b0c;
+}
+
+a:hover {
+    color:#a63b0c;
+}
+
+
 
 
 
