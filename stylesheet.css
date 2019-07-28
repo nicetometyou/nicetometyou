@@ -39,7 +39,7 @@
     font-family: home;
     font-size: 80pt;
     text-align: center;
-    color:#660033;;
+    color:#B7410E;
 }
 
 #subtitle{
@@ -47,7 +47,7 @@
     font-size: 20pt;
     text-align: center;
     margin-bottom:40px;
-    color:#660033;;
+    color: #B7410E;
 }
 
 .description1 {
@@ -55,7 +55,7 @@
     font-size: 25pt;
     margin-top: 40px;
     text-transform: uppercase;
-    color: #996633;
+    color: #a63b0c;
     font-weight: bold;
 }
 
@@ -65,7 +65,7 @@
     text-align: center;
     margin-top: 40px;
     text-transform: uppercase;
-    color:#996633;
+    color:#a63b0c;
     font-weight: bold;
 }
 
@@ -88,7 +88,7 @@ p {
     margin-top: 120px;
     font-family: quick;
     font-size: 50pt;
-    color: #660033;
+    color: #B7410E;
     text-align: center;
 }
 
@@ -97,7 +97,7 @@ p {
     font-size: 20pt ;
     text-align: center;
     margin-top: 40px;
-    color:#996633;
+    color:#a63b0c;
     font-weight: bold;
 }
 
