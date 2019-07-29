@@ -38,7 +38,7 @@
 }
 
 #title {
-    margin-top:100px;
+    padding-top:50px;
     font-family: home;
     font-size: 80pt;
     text-align: center;
@@ -97,7 +97,7 @@ p {
 
 .subtitle-homepage {
     font-family: quick;
-    font-size: 40pt;
+    font-size: 45px;
     color: #a63b0c;
     text-align: center;
 }
@@ -141,6 +141,15 @@ a {
 
 a:hover {
     color:#a63b0c;
+}
+
+.center-fit {
+	padding: 0;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    margin-top: 65px;
 }
 
 
