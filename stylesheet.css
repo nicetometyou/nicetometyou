@@ -26,6 +26,15 @@
     margin-bottom:80px;
 }
 
+.mainbody-interview {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    margin-bottom:10px;
+}
+
 .logo {
     width: 50px;
     
@@ -75,7 +84,7 @@
 p {
     font-family: light;
     font-size:15pt;
-    text-align:justify;
+    
 }
 
 .sub-description1{
@@ -127,8 +136,12 @@ p {
 
 ol {
     font-family: light;
-    font-size:15pt;
-    text-align:justify;
+    font-size:15pt;   
+}
+
+ul {
+    font-family: light;
+    font-size:15pt;  
 }
 
 .list {
