@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+        
         <title>Nice to MET you</title>
         <link rel="icon" href=""> <!-- FAVICON (logo nella scheda del browser)-->
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!--My CSS-->
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
+        <style id="css" type="text/css"></style>
+
 
         <!--Worwflow links-->
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-                
-        <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
-        <style id="css" type="text/css"></style>
 
-        <!--Modal-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    </head>
+<!--JS link-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>        
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+</head>
 
 
     <body>
@@ -119,37 +124,35 @@
                       <h4 class="timeline-title">Overview on the context</h4>
                     </div>
                     <div class="timeline-body">
-                      <p>This project has been developed as a final examination for the course of "Intangible Artifacts, Cultural Heritage and Multimedia". The aim is to develop an idea that can transform an ancient tradition of Romagna into... <a data-toggle="modal" data-target="#myModal">(read more <u>here</u>).</a>
+                      <p>This project has been developed as a final examination for the course of "Intangible Artifacts, Cultural Heritage and Multimedia". The aim is to develop an idea that can transform an ancient tradition of Romagna into...</p>
 
-                        <!-- Modal -->
-                        <div id="myModal" class="modal fade" role="dialog">
-                            <div class="modal-dialog modal-lg">
-                      
+                      <a  data-toggle="modal" data-target=".bd-example-modal-lg">Read more here</a>
 
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title" style="color: #cc5200;">Overview on the context</h4>
-                              </div>
-                              <div class="modal-body">
-                                <p>This project has been developed as a final examination for the course of "Intangible Artifacts, Cultural Heritage and Multimedia".
-                                    The aim is to develop an idea that can transform an ancient tradition of Romagna into an interactive media design project. </br>
-                                    I have chosen to focus on <a href="rustprint.html">rust prints</a>: decorations on hemp fabrics, cultivated and harvested in the Romagna countryside. Rust printing is a tradition that is lost in time, so much so that it is difficult to find a starting date. In fact, this art was born among poor people who found a way to decorate their household linen with an equally humble tool, rust. </br>
-                                    My interest in this kind of art stems from the fact that not many people today know this type of printing process, and outside the area of Romagna is completely unknown. Today there are very few artisans who still cultivate the tradition of rust printing in small and old shops,where they follow the printing process as it happened hundreds of years ago. The oldest shops still have huge wooden wheels driven by the force of man, which were used (and still are) to activate a mechanism for stretching the fabrics. </br>
-                                    The development of the idea for the preservation of this heritage was not at all simple: the lack of sources, the silence of the craftsmen not to reveal any secrets, the closure of the only museum that preserves part of this tradition have made it even more difficult to understand how to pass on the tradition and give rise to interest in this type of craftsmanship in the younger generations. </br>
-                                    In the end, the choice was to develop various multimedia applications at the <a href="http://www.museisantarcangelo.it/met/" target="_blank">MET</a> (Museo Etnografico degli Usi e Costumi della Gente di Romagna) for primary and secondary school children. But not only multimedia innovation: I have chosen to emphasize the rediscovery of the pleasure of manual craftsmanship with sensory and emotional paths to stimulate the active participation of users, allowing them to touch copies of the original tools of the fabric printer from Romagna.</p>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              </div>
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Overview on the context</h5>
+                  </div>
+
+                  <div class="modal-body">
+                    <p>This project has been developed as a final examination for the course of "Intangible Artifacts, Cultural Heritage and Multimedia".
+                    The aim is to develop an idea that can transform an ancient tradition of Romagna into an interactive media design project. </br>
+                    I have chosen to focus on <a href="rustprint.html">rust prints</a>: decorations on hemp fabrics, cultivated and harvested in the Romagna countryside. Rust printing is a tradition that is lost in time, so much so that it is difficult to find a starting date. In fact, this art was born among poor people who found a way to decorate their household linen with an equally humble tool, rust. </br>
+                    My interest in this kind of art stems from the fact that not many people today know this type of printing process, and outside the area of Romagna is completely unknown. Today there are very few artisans who still cultivate the tradition of rust printing in small and old shops,where they follow the printing process as it happened hundreds of years ago. The oldest shops still have huge wooden wheels driven by the force of man, which were used (and still are) to activate a mechanism for stretching the fabrics. </br>
+                    The development of the idea for the preservation of this heritage was not at all simple: the lack of sources, the silence of the craftsmen not to reveal any secrets, the closure of the only museum that preserves part of this tradition have made it even more difficult to understand how to pass on the tradition and give rise to interest in this type of craftsmanship in the younger generations. </br>
+                    In the end, the choice was to develop various multimedia applications at the <a href="http://www.museisantarcangelo.it/met/" target="_blank">MET</a> (Museo Etnografico degli Usi e Costumi della Gente di Romagna) for primary and secondary school children. But not only multimedia innovation: I have chosen to emphasize the rediscovery of the pleasure of manual craftsmanship with sensory and emotional paths to stimulate the active participation of users, allowing them to touch copies of the original tools of the fabric printer from Romagna.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
                             </div>
 
-                          </div>
-                        </div>
-                      </p>
-                    </div>
-                  </div>
-                </li>
+                </div>
+              </div>
+            </div>
+          </li>
 
                 <li class="timeline-inverted" >
                   <div class="timeline-badge"><p style="text-align: center; font-size: 25px;">2</p></div>
