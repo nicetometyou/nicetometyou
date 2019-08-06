@@ -13,6 +13,15 @@
                 
         <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
         <style id="css" type="text/css"></style>
+
+        <!--map-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
     </head>
 
 
@@ -157,33 +166,83 @@
     </div>
     </div> 
 
+<div class="mainbody">
+<div>
+  <p style="font-family: quick; font-size: 45px; color: #a63b0c; text-align: center; margin-top:30px;">Visit Report</p>
+      <p>Having had the opportunity to visit the interior of the museum, despite its temporary closure to the public, I have noticed positive aspects of the museum that must be absolutely valued and other aspects of the setting that, in my opinion, can be modified to be exploited to the full. </br>
+      Here's my thoughts on the current state of the MET. Coming from the train station of Santarcangelo di Romagna it is necessary to walk 10-12 minutes to reach the museum. The road conditions are not the best, but the museum is located in a fairly good place compared to the city, in fact it is slightly outside the historic center but it takes only 10 minutes walk to reach it. What I have noticed, reaching the museum by car, is that there are not many parking lots for cars and there are no parking lots for bicycles. </br>
+    </p>
+    <br>
+    <br>
+      <div id="mapid" style="height: 400px; width: 800px; margin: 0 auto 0 auto;"></div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
 
 <div>
-  <p style="font-family: quick; font-size: 45px; color: #a63b0c; text-align: center; margin-top:80px;">Visit Report</p>
-      <p>Having had the opportunity to visit the interior of the museum, despite its temporary closure to the public, I have noticed positive aspects of the museum that must be absolutely valued and other aspects of the setting that, in my opinion, can be modified to be exploited to the full. </br>
-      Below is my thoughts on the current state of the MET: </br>
-      Coming from the train station of Santarcangelo di Romagna it is necessary to walk 8-10 minutes to reach the museum. The road conditions are not the best, but the museum is located in a fairly good place compared to the city, in fact it is slightly outside the historic center but it takes only 10 minutes walk to reach it. What I have noticed, reaching the museum by car, is that there are not many parking lots for cars and there are no parking lots for bicycles. </br>
-
-
+  <p style="color: #cc5200; font-size: 25px;">The outside of the museum </p>
+    <p>From outside the museum fence you can see part of the huge park that houses the museum. In some areas of the garden are located ancient millstones. Here, numerous trees of different families characterize the park and create large areas of shade that can be used in summer, for example. There are also numerous fruit trees: cherry trees, olive trees, hazelnuts, etc... enrich the landscape. <br>
+    The entrance to the museum that overlooks the street looks like a white building with a large inscription on the facade that bears the name and logo of the museum, easily visible to those who pass from there in front. This part of the building is intended for the Museum's offices. <br>
+    At the gate on the left hand side of the fattening area there are large posters showing the summer activities proposed by the museum to the citizens, in particular to children and families. One advertised the "Puppet Festival" and the other the "Theatre under the stars". <br>
+    As Federica Foschi, head of MET education, explained to me, in the last two to three years, since MET temporarily closed down for the renovation of its premises, they have been promoting activities and events within the large park surrounding MET, so that the community does not lose the relationship it had built up over the years with the Museum.
       </p>
-      <div id="googleMap" style="width:100%;height:400px;"></div>
-
-
-
-      <script>
-          function myMap() {
-          var mapProp= {
-            center:new google.maps.LatLng(51.508742,-0.120850),
-            zoom:5,
-          };
-          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-          }
-          </script>
-  
-          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-  
 </div>
 
 
+
+<br>
+<br>
+
+
+<div>
+  <p style="color: #cc5200; font-size: 25px;">The inside areas of the museum </p>
+    <p>Continuing beyond the entrance gate you will find yourself in front of a huge building that once housed the municipal slaughterhouse. The external structure is the same as at the time, while inside the rooms have been reorganized to house the collections of the Museum. <br>
+
+    My visit begins at the end of the museum itinerary, in the enormous room where the Museum's archive is located. Compared to the map, which dates back to 2005, the archive is no longer in room M, but in room E. Here the documents are not kept in the best conditions and there is no archivist who takes care of the funds. It is a room 6/7 meters high, well lit by long windows on the sides; inside there are shelves, cabinets and drawers that house documents, magazines and prints. Unfortunately, this room also serves as a warehouse: chairs, tables and various tools for the activities of the museum are piled up here. I think this should be relocated to the outside wing of the museum, as it was until a few years ago. In room M are now exposed the means of transport of rural life: wagons and gigs of any size and color. </p>
+        
+    <p>I continue my visit in room D, "conference room and educational workshops". Federica Foschi explains to me that here the activities with the pupils of the schools were carried out before the museum closed. Today the activities are carried out during the school year in schools by a company of Santarcangelo, "Le Pu-Pazze". Here is the <a href="http://www.museisantarcangelo.it/wp-content/uploads/sites/8/2019/06/didattica-museale-20192020.pdf">programme</a> for the school year 2019/2020. Currently this room is bare, it houses only some materials for external events organized by the museum. </p>
+        
+    <p>From here begins a backward visit to the rooms of the museum that I was granted, where even today are preserved objects that are part of the permanent collection of the museum but that unfortunately are not visitable. Their state is obviously not the best, the objects are dusty and you can find small dead animals anywhere in the rooms. <br> 
+    
+    The rooms are all very high and wide, not always divided by real walls, but by imaginary paths that conceptually separate the sections according to the topics. The fact of having so much space available is a great advantage because the tools of country life are large and take up a lot of space. There are, for example, the tools of the winemaker blacksmith, the baker, the seamstresses, the farmers, etc... <br>
+
+    In each room there are large explanatory posters with long explanations, both in Italian and English, with images of the time. Visually they are well made in terms of color but I think that the explanations are sometimes too long. <br> 
+    One of the idea for the projection of the interactive media application concerns just this aspect: decrease, or even remove, the explanatory posters to create an application that can be downloaded on the mobile phone that guides the user through the rooms of the museum giving him, step by step, all the explanations he/she needs. </p>
+    
+    <p>In addition, in each room, the museum itinerary presents particular installations that act as a counterpoint to the entire exhibition to draw the attention of visitors to the theme of memory as an accumulation and stratification of words, things, stories: these are Cumulus and Digressions. <br>
+    The Cumulus are presented as monuments to the collective memory, as stops where to stop to collect the thoughts that the museum has aroused and add them to that "full of things" that is a representation of everyday life and its stories. <br>
+    Digressions is a path that accompanies the visitor through the objects of life and work. The small display cases of Digression contain objects/symbols that aim to underline links and discontinuity between past and present. For example, in the wine room there was a display case with a bottle of Coca Cola inside, while in the sewing room there was a display case with a synthetic fabric.
+      </p>
+</div>
+
+<br>
+<br>
+
+<div>
+    <p style="color: #cc5200; font-size: 25px;">Final considerations</p>
+    <p>What I have noticed is that there is no type of active participation of the users. It is a museum rich in history and art, but it includes a classic visit, in which the visitor moves through the rooms observing the collection without having the opportunity to touch and experience the ancient works of country life. 
+    This is an aspect that I intend to modify in favour of an active and interactive visit of the users, maybe with the creation of small works of craftsmanship made by users who can take home at the end of the visit, exploiting the aspect of the museum-gift ....(SEARCHING HOW IT IS CALLED). 
+    What I intend to develop is a project for the redevelopment of the museum itinerary through digital and non digital tools in which the visitor can feel integral and active part of this small cosmos that is the rural world of Romagna, rediscovering a past too often unknown, where you can find ideas, opportunities for reflection and ideas to be exploited, becoming part of the game creativity and imagination. 
+        </p>
+  </div>
+
+
+</div>
 </body>
+
+<script>
+var mymap = L.map('mapid').setView([44.06865, 12.44687], 18);
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+}).addTo(mymap);
+
+var marker = L.marker([44.06865, 12.44687]).addTo(mymap);
+
+marker.bindPopup("<b>MET</b><br>Museo Etnografico degli Usi e Costumi della Gente di Romagna <br>Via Federico Montevecchi, 41, 47822 Santarcangelo di Romagna RN").openPopup();
+</script>
+
+
 </html>
