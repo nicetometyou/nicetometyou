@@ -149,11 +149,7 @@ ul {
 }
 
 a {
-    color: #a63b0c;
-}
-
-a:hover {
-    color:#a63b0c;
+    color: #a63b0c !important;
 }
 
 .center-fit {
