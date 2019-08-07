@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 body {
   font-family: Verdana, sans-serif;
@@ -31,7 +32,7 @@ body {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 20px;
   left: 0;
   top: 0;
   width: 100%;
@@ -46,7 +47,7 @@ body {
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
+  width: 50%;
   max-width: 1200px;
 }
 
@@ -105,14 +106,6 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 img {
   margin-bottom: -4px;
@@ -144,8 +137,9 @@ img.hover-shadow {
 </style>
 <body>
 
-<h2 style="text-align:center">Lightbox</h2>
+<h2 style="text-align:center">Photogallery</h2>
 
+<!--FIRST ROW-->
 <div class="row">
   <div class="column">
     <img src="images/esterno1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
@@ -161,29 +155,121 @@ img.hover-shadow {
   </div>
 </div>
 
+<br>
+
+<!--SECOND ROW-->
+<div class="row">
+        <div class="column">
+          <img src="images/esterno5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/esterno6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/esterno7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/esterno8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        </div>
+</div>
+
+<br>
+
+
+<!--THIRD ROW-->
+<div class="row">
+        <div class="column">
+          <img src="images/archivio1.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/archivio2.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/lab1.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/lab2.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+        </div>
+</div>
+
+
+<br>
+
+
+<!--FOURTH ROW-->
+<div class="row">
+        <div class="column">
+          <img src="images/archivio1.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/archivio2.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/lab1.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/lab2.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+        </div>
+</div>
+
+
+
+
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
 
     <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="images/esterno1.jpg" style="width:100%">
+        <img src="images/esterno1.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="images/esterno2.jpg" style="width:100%">
+        <img src="images/esterno2.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="images/esterno3.jpg" style="width:100%">
+        <img src="images/esterno3.jpg" style="width:100%">
     </div>
     
     <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="images/esterno4.jpg" style="width:100%">
+        <img src="images/esterno4.jpg" style="width:100%">
     </div>
+
+
+    <div class="mySlides">
+        <img src="images/esterno5.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+        <img src="images/esterno6.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+        <img src="images/esterno7.jpg" style="width:100%">
+    </div>
+          
+    <div class="mySlides">
+        <img src="images/esterno8.jpg" style="width:100%">
+    </div>
+
+
+    <div class="mySlides">
+        <img src="images/archivio1.jpg" style="width:100%">
+    </div>
+          
+    <div class="mySlides">
+        <img src="images/archivio2.jpg" style="width:100%">
+    </div>
+          
+    <div class="mySlides">
+        <img src="images/lab1.jpg" style="width:100%">
+    </div>
+              
+    <div class="mySlides">
+        <img src="images/lab2.jpg" style="width:100%">
+    </div>
+    
+    
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -205,6 +291,36 @@ img.hover-shadow {
     <div class="column">
       <img class="demo cursor" src="images/esterno4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
     </div>
+
+
+    <div class="column">
+        <img class="demo cursor" src="images/esterno5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Esterno5">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="images/esterno6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snow">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="images/esterno7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="images/esterno8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+    </div>
+
+
+    <div class="column">
+        <img class="demo cursor" src="images/archivio1.jpg" style="width:100%" onclick="currentSlide(9)" alt="Esterno5">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="images/archivio2.jpg" style="width:100%" onclick="currentSlide(10)" alt="Snow">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="images/lab1.jpg" style="width:100%" onclick="currentSlide(11)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="images/lab2.jpg" style="width:100%" onclick="currentSlide(12)" alt="Northern Lights">
+    </div>
+
+
   </div>
 </div>
 
