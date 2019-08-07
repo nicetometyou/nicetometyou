@@ -386,7 +386,7 @@ a {
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: black;
     margin: auto;
     padding: 0;
     width: 50%;
@@ -395,17 +395,17 @@ a {
   
   /* The Close Button */
   .close {
-    color: white;
+    color: #cc5200;
     position: absolute;
     top: 60px;
     right: 25px;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: bold;
   }
   
   .close:hover,
   .close:focus {
-    color: #999;
+    color: rgb(143, 18, 18);
     text-decoration: none;
     cursor: pointer;
   }
