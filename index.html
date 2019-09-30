@@ -68,8 +68,76 @@
       <div>
         <h1 id="title">Nice to MET you</h1>
         <h2 id="subtitle">A new experience at MET - Museo Etnografico degli Usi e Costumi della Gente di Romagna</h2>
-        <p><i>Nice to MET you</i> has been developed for the final exam of "Intangible Artifacts, Cultural Heritage and Multimedia", course of DHDK, held by prof. <a href="https://www.unibo.it/sitoweb/sofia.pescarin" target="_blank"> Sofia Pescarin </a> at the University of Bologna, a.y. 2018/2019.</p>
       </div>
+
+      <!-------------------SLIDESHOW--------------------------------->
+      <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <img src="img_nature_wide.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="img_snow_wide.jpg" style="width:100%">
+            
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="img_mountains_wide.jpg" style="width:100%">
+           </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          
+          <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+          }
+          </script>
+
+        <!--FINE SLIDESHOW--------------------->
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <p><i>Nice to MET you</i> has been developed for the final exam of <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2019/424630" target="_blank">"Intangible Artifacts, Cultural Heritage and Multimedia"</a>, course of <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank">Digital Humanities and Digital Knowledge</a>, held by prof. <a href="https://www.unibo.it/sitoweb/sofia.pescarin" target="_blank"> Sofia Pescarin </a> at the University of Bologna, a.y. 2018/2019.</p>
+              <p>The focus of the project is the tradition of rust printing on fabric, once practiced in rural areas of Romagna. The idea for the project was born thinking about the art that characterizes Rimini, my hometown. Rust printing was an excellent candidate considering that it is an art that is gradually disappearing and only a few people know the technique of realization. 
+                The idea is developed within two rooms of the MET - Museo Etnografico degli Usi e Costumi della Gente di Romagna, from which the project takes its name. It consists of two closely linked parts: a short 3D animation film that explains how rust prints are made and a workshop part to put the knowledge gained into practice and print a T-shirt.</p>
+                <p>Below you will find the research path undertaken for the realization of the project and all its stages of processing. <br>
+                  Enjoy the reading!</p>
+            </div>
+            <div class="col-sm">
+              <p>The cretive process</p>
+              <img src="images/creative_process.png" width="100%">
+            </div>
+          </div>
+        </div>
+        
+     
 
       
       <!--WORFLOW-->  
