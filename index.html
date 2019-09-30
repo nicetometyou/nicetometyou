@@ -29,12 +29,10 @@
 
 
     <body>
-            <!--<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #B7410E; font-family: light;">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #B7410E; font-family: light;">
               <div class="logo-index">
                 <a class="index-button" >
-                  <div>
-                  <img class="logo" src="images/logo.png">
-                  </div>
+                  
                 </a>
               </div>
 
@@ -43,83 +41,88 @@
                       <span class="navbar-toggler-icon"></span>
                     </button>
                   
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                          <li class="nav-item">
-                            <a class="nav-link" href="index.html" style="color: #301103 !important; font-size: 23px;">Home</a>
-                          </li>
-                         </ul>
-                    </div>
+                    
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                           <li class="nav-item">
-                            <a class="nav-link" href="contact.html" style="color: #301103 !important; font-size: 23px;">Contacts</a>
+                            <a class="nav-link" href=".html" style="color: #301103 !important; font-size: 23px;">Contacts</a>
                           </li>
                          </ul>
                     </div>
-              </nav>-->
-
-      <!--<div class="imgbox">
-        <img src="images/stampe.jpg" class="center-fit">
-      </div> -->
+              </nav>
 
       
-      <div>
-        <h1 id="title">Nice to MET you</h1>
-        <h2 id="subtitle">A new experience at MET - Museo Etnografico degli Usi e Costumi della Gente di Romagna</h2>
-      </div>
+      
 
       <!-------------------SLIDESHOW--------------------------------->
-      <div class="slideshow-container">
+      <div class="slideshow-container" style="padding-top:55px;">
 
-          <div class="mySlides fade">
-            <img src="img_nature_wide.jpg" style="width:100%">
+          <div class="mySlides">
+           <img src="images/iniziale1.jpg" style="width:100%" height="350">
           </div>
           
-          <div class="mySlides fade">
-            <img src="img_snow_wide.jpg" style="width:100%">
-            
+          <div class="mySlides">
+            <img src="images/iniziale2.jpg" style="width:100%" height="350">
           </div>
           
-          <div class="mySlides fade">
-            <img src="img_mountains_wide.jpg" style="width:100%">
-           </div>
+          <div class="mySlides">
+            <img src="images/iniziale3.jpg" style="width:100%" height="350">
+          </div>
+
+          <div class="mySlides">
+              <img src="images/iniziale4.jpg" style="width:100%" height="350">
+             </div>
+             
+             <div class="mySlides">
+               <img src="images/iniziale5.jpg" style="width:100%" height="350">
+             </div>
+             
+             <div class="mySlides">
+               <img src="images/iniziale6.jpg" style="width:100%" height="350">
+             </div>
           
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
           <br>
           
-          <div style="text-align:center">
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-          </div>
           
           <script>
-          var slideIndex = 0;
-          showSlides();
+          var slideIndex = 1;
+          showSlides(slideIndex);
           
-          function showSlides() {
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
             for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
+                slides[i].style.display = "none";  
             }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
             for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
+                dots[i].className = dots[i].className.replace(" active", "");
             }
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 5000); // Change image every 2 seconds
           }
           </script>
 
         <!--FINE SLIDESHOW--------------------->
 
-
+        <div>
+            <h1 id="title">Nice to MET you</h1>
+            <h2 id="subtitle">A new experience at MET - Museo Etnografico degli Usi e Costumi della Gente di Romagna</h2>
+          </div>
 
         <div class="container">
           <div class="row">
