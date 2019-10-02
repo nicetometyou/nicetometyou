@@ -47,7 +47,6 @@
 }
 
 #title {
-    padding-top:0px;
     font-family: home;
     font-size: 80pt;
     text-align: center;
@@ -102,6 +101,14 @@ p {
     font-size: 50pt;
     color: #B7410E;
     text-align: center;
+}
+
+.title-page1 {
+  padding-top:80px;
+  font-family: quick;
+  font-size: 50pt;
+  color: #B7410E;
+  text-align: center;
 }
 
 .subtitle-homepage {
@@ -254,7 +261,7 @@ a {
             top: 16px;
             left: 50%;
             margin-left: -25px;
-            background-color: #d9c2ba;
+            background-color: #c96438;
             z-index: 100;
             border-top-right-radius: 50%;
             border-top-left-radius: 50%;
@@ -652,4 +659,29 @@ font-size:10px;}
   color: black;
 }
 
+
+
+
+/*BREADCRUMBS */
+ul.breadcrumb {
+  padding: 10px 16px;
+}
+
+ul.breadcrumb li {
+  font-size: 18px;
+  font-family:light;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: black;
+ 
+}
+ul.breadcrumb li a:hover {
+  color: #B7410E;
+  text-decoration: underline;
   
